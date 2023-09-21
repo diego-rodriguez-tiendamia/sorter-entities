@@ -10,9 +10,6 @@ export enum FlowType {
 
 @Entity()
 export class Response {
-    @PrimaryGeneratedColumn()
-    id: number;
-
     @Column('varchar', { length: 255 })
     statusMessage: string;
 
